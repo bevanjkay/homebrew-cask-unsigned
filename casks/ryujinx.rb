@@ -19,5 +19,8 @@ cask "ryujinx" do
 
   uninstall quit: "org.ryujinx.Ryujinx"
 
-  zap trash: "~/Library/Saved Application State/org.ryujinx.Ryujinx.savedState"
+  zap trash: [
+    "~/.config/Ryujinx",
+    "~/Library/Saved Application State/org.ryujinx.Ryujinx.savedState",
+  ]
 end
