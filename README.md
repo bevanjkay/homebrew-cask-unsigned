@@ -2,13 +2,13 @@
 
 ## What are these casks?
 
-Homebrew requires applications to be signed. This is a a collection of casks that are not signed, but still useful.
+Homebrew requires applications to be signed. This is a a collection of casks that are not signed, but still useful. Since the applications are unsigned, it's advised to pass `--no-quarantine` when running `brew install`.
 
 ## How do I install these casks?
 
 `brew install p-linnane/unsigned/<cask>`
 
-Or `brew tap p-linnane/unsigned` and then `brew install --cask <cask>`.
+Or `brew tap p-linnane/unsigned` and then `brew install --cask --no-quarantine <cask>`.
 
 ## Documentation
 
