@@ -4,6 +4,10 @@
 
 Homebrew requires applications to be signed. This is a a collection of casks that are not signed, but still useful. Since the applications are unsigned, it's advised to pass `--no-quarantine` when running `brew install`.
 
+## Current list of casks:
+
+* `ryujinx`: Nintendo Switch emulator
+
 ## How do I install these casks?
 
 `brew install p-linnane/unsigned/<cask>`
