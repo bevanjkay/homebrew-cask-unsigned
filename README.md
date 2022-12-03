@@ -10,9 +10,9 @@ Homebrew requires applications to be signed. This is a a collection of casks tha
 
 ## How do I install these casks?
 
-`brew install p-linnane/unsigned/<cask>`
+`brew install p-linnane/cask-unsigned/<cask>`
 
-Or `brew tap p-linnane/unsigned` and then `brew install --cask --no-quarantine <cask>`.
+Or `brew tap p-linnane/cask-unsigned` and then `brew install --cask --no-quarantine <cask>`.
 
 ## Documentation
 
