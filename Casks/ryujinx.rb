@@ -10,8 +10,15 @@ cask "ryujinx" do
 
   livecheck do
     url :url
-    regex(%r{href=["']?[^"' >]*?/tag/v?(\d+(?:\.\d+)+)[._-]macos.*?["' >]}i)
-    strategy :github_latest
+    regex(/Ryujinx[._-]v?(\d+(?:\.\d+)+)[ ._-]/i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   depends_on macos: ">= :big_sur"
